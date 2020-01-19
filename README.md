@@ -1,2 +1,4 @@
 # Jano-Ki
-Simple project for Mobile Application &amp; Development Course- CSC455
+Simple an awareness project for Mobile Application &amp; Development Course- CSC455
+Tools: Android Studio
+Backend Language: Java
