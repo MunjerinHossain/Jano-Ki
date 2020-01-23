@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login">
+
+
+    <TextView
+        android:id="@+id/imageView3"
+        android:text="Jano ki?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginPage_etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="2dp"
+        android:autofillHints="@string/Email"
+
+        android:drawablePadding="10dp"
+        android:ems="15"
+
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColorHighlight="#A6BD04"
+        android:textColorHint="@color/field_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/LoginPage_etPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/LoginPage_etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints="@string/Password"
+
+        android:drawablePadding="15dp"
+        android:ems="15"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColorHint="@color/field_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_tvForgotPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPage_etEmail" />
+
+    <TextView
+        android:id="@+id/loginPage_tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/Forgot_Password"
+        android:textColor="@color/field_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPage_etPassword" />
+
+    <Button
+        android:id="@+id/loginPage_btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:text="@string/Login"
+        android:textColor="#083b66"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/alp_tvNoac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPage_tvForgotPassword" />
+
+
+    <TextView
+
+        android:id="@+id/alp_tvNoac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/no_account"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/loginPage_tvSignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPage_btnLogin" />
+
+
+    <Button
+        android:id="@+id/loginPage_tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alp_tvNoac"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:text="@string/Signup"
+        android:textColor="#083b66"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alp_tvNoac" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
